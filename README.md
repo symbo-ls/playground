@@ -1,6 +1,6 @@
 # DOMQL Playground
 
-Live code editing of [DOMQL](https://github.com/rackai/domql) code.
+Live code editing of [DOMQL](https://github.com/rackai/domql) code. [Live example](http://rackai.github.io/playground/) can be seen here.
 
 ### Setup
 1. Clone the repo
