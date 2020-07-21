@@ -44,6 +44,7 @@ injectGlobal`
   .codeflask__flatten.codeflask__flatten {
     padding: 0;
     color: white;
+    line-height: 22px;
   }
   .codeflask.codeflask .token.punctuation {
     color: #4a4a4a;
