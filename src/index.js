@@ -1,18 +1,17 @@
 'use strict'
 
-import DOM from 'domql'
-var { performance } = window
+import DOM from '@rackai/domql'
+import './define'
 
-var start = performance.now()
+import { style } from './canvas/style'
+
+import preview from './preview'
+import code from './code'
+
+window.DOM = DOM
+
 var dom = DOM.create({
-  style: {
-    fontFamily: '"Helvetica", "Arial", --system-default'
-  },
-  icon: '✅',
-  strong: 'domql',
-  text: ` render in `,
-  time: '',
-  milliseconds: ' milliseconds'
+  style,
+  preview,
+  code
 })
-
-dom.update({ time: `${performance.now() - start}` })
