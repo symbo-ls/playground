@@ -1,7 +1,7 @@
 'use strict'
 
 import DOM from '@rackai/domql'
-import Symbols from '@rackai/symbols'
+import * as Symbols from '@rackai/symbols'
 import './define'
 
 import { style } from './canvas/style'

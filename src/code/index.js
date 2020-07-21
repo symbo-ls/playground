@@ -5,8 +5,6 @@ import CodeFlask from 'codeflask'
 import { style, code } from './style'
 import preview from '../preview'
 
-import { objectify } from './utils'
-
 var str = `var Button = {
   tag: 'button',
   style: {
@@ -60,11 +58,7 @@ export default {
         flask.updateCode(str)
 
         flask.onUpdate((code) => {
-          // var obj = objectify(code.replace(/'/g, ''))
-          // try {  } catch (error) {
-            //   throw error
-            // }
-          eval(code)  
+          eval(code)
           preview.center.set(app)
         })
       }

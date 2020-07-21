@@ -21,7 +21,8 @@ export const style = {
     opacity: 0.35,
     fontWeight: 700,
     textTransform: 'uppercase',
-    fontSize: 12
+    fontSize: 12,
+    userSelect: 'none'
   }
 }
 
