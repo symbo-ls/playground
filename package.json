@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@rackai/domql": "git+https://git@github.com/rackai/domql",
-    "@rackai/scratch": "git+https://git@github.com/rackai/scratch",
+    "@rackai/symbols": "git+https://git@github.com/rackai/symbols",
     "codeflask": "^1.4.1"
   },
   "devDependencies": {

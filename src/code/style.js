@@ -1,7 +1,7 @@
 'use strict'
 
 import { injectGlobal } from 'emotion'
-import { opacify } from '@rackai/scratch'
+import { opacify } from '@rackai/symbols'
 
 export const style = {
   margin: 6,
