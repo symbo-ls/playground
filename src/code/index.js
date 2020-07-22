@@ -8,6 +8,7 @@ import preview from '../preview'
 var str = `var Button = {
   tag: 'button',
   style: {
+    // emotion
     background: 'white',
     color: 'black',
     padding: '10 20',
@@ -19,13 +20,10 @@ var str = `var Button = {
   }
 }
 
-var number = {
-  tag: 'h2',
-  text: 0
-}
+var number = { text: 0 }
 
 var app = {
-  number,
+  h2: number,
   increment: {
     proto: Button,
     text: 'Increment',

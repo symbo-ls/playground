@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="348" height="135" viewBox="0 0 348 135">
+  <defs>
+    <text id="welcome-b" font-family="AvenirNext-Bold, Avenir Next" font-size="62" font-weight="bold" letter-spacing="-.581">
+      <tspan x="0" y="109">Playground</tspan>
+    </text>
+    <filter id="welcome-a" width="101.7%" height="107.1%" x="-.9%" y="-2.4%" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(2)">
+    <g fill-rule="nonzero">
+      <use fill="#F9B958" fill-opacity=".05" stroke="#F9B958" stroke-width="2" filter="url(#welcome-a)" xlink:href="#welcome-b"/>
+      <use fill="#F9B958" fill-opacity=".05" xlink:href="#welcome-b"/>
+      <use stroke="#F9B958" stroke-width="2" xlink:href="#welcome-b"/>
+    </g>
+    <text fill="#F9B958" font-family="AvenirNext-Bold, Avenir Next" font-size="62" font-weight="bold" letter-spacing="-.581">
+      <tspan x="66" y="62">DOMQL</tspan>
+    </text>
+  </g>
+</svg>
