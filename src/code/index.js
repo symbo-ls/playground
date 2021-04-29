@@ -12,11 +12,11 @@ var str = `var Button = {
     background: 'white',
     color: 'black',
     padding: '10 20',
-    fontSize: 16,
-    borderRadius: 10,
-    fontWeight: 500,
+    fontSize: '16',
+    borderRadius: '10',
+    fontWeight: '500',
     boxShadow: '0 3px 10px rgba(0, 0, 0, .35)',
-    border: 0
+    border: '0'
   }
 }
 
