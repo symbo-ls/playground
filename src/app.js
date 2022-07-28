@@ -5,10 +5,10 @@ import { style } from './canvas/style'
 import preview from './preview'
 import code from './code'
 
-import * as Symbols from '@rackai/symbols'
-window.Symbols = Symbols
+import * as smbls from 'smbls'
+window.smbls = smbls
 
-export default {
+export const Playground = {
   style,
   preview,
   code
