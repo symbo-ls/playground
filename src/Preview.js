@@ -1,23 +1,42 @@
 'use strict'
 
-import { Flex } from 'smbls'
+import DOM from 'domql'
+import { initEmotion } from 'domql/packages/emotion'
+import { Scene, Flex } from '@symbo.ls/components'
 
 export const Preview = {
-  proto: Flex,
+  proto: [Scene, Flex],
 
   props: {
     align: 'center center',
-    padding: 'A B2',
     flex: 1,
-    position: 'relative'
+    position: 'relative',
+    theme: { background: 'gray1 .45' },
+
+    scene: {
+      padding: 'A B2',
+      css: { backgroundPosition: '0 0' }
+    }
   },
 
-  center: {
-    tag: 'shadow',
+  scene: {
+    shadow: {
+      tag: 'shadow',
 
-    content: (element, state) => {
+      styles: {
+        tag: 'head',
+        on: {
+          attachNode: ({ node }) => {
+            console.log(node)
+            // initEmotion(node)
+          }
+        }
+      },
 
-      return window.eval(state.code) // eslint-disable-line no-eval
+      content: (el, state) => {
+        // return DOM.create(window.eval(state.code), el) // eslint-disable-line no-eval
+        return window.eval(state.code) // eslint-disable-line no-eval
+      }
     }
   }
 }

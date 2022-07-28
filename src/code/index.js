@@ -2,12 +2,26 @@
 
 import CodeFlask from 'codeflask'
 
-import { props } from './props'
+import css from './style'
 
 export * from './code'
 
 export const Code = {
-  props,
+  props: {
+    position: 'relative',
+    background: 'gray1',
+    padding: 'A1 B',
+    widthRange: 'H H1',
+    borderRadius: 'A',
+    height: '100%',
+
+    flex: '0 1 42%',
+    display: 'flex',
+    flexDirection: 'column',
+    fontFamily: 'Code',
+
+    css
+  },
 
   attr: { contentEditable: true },
 
