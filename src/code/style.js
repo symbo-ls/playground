@@ -11,7 +11,7 @@ export const style = {
   maxWidth: 540,
   position: 'relative',
   borderRadius: 6,
-  
+
   flex: '0 1 42%',
   display: 'flex',
   flexDirection: 'column',

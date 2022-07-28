@@ -3,7 +3,7 @@
 import CodeFlask from 'codeflask'
 
 import { style, code } from './style'
-import preview from '../preview'
+import { Preview } from '../Preview'
 
 var str = `var Button = {
   tag: 'button',
@@ -35,7 +35,7 @@ var app = {
   }
 }
 
-// connecting to preview
+// connecting to Preview
 window.app = app`
 
 export default {
@@ -56,8 +56,8 @@ export default {
         flask.updateCode(str)
 
         flask.onUpdate((code) => {
-          eval(code)
-          preview.center.set(app)
+          eval(code) // eslint-disable-line no-eval
+          Preview.center.set(window.app)
         })
       }
     }

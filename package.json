@@ -1,11 +1,10 @@
 {
   "name": "@symbo.ls/playground",
-  "description": "",
-  "private": true,
-  "author": "",
+  "description": "Symbols playground",
+  "author": "symbo.ls",
   "version": "0.0.1",
-  "repository": "",
-  "main": "src/index.js",
+  "repository": "https://github.com/symbo-ls/playground",
+  "main": "src/Playground.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url .",
