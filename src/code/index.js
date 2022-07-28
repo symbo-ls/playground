@@ -2,64 +2,25 @@
 
 import CodeFlask from 'codeflask'
 
-import { style, code } from './style'
-import { Preview } from '../Preview'
+import { props } from './props'
 
-var str = `var Button = {
-  tag: 'button',
-  style: {
-    // emotion
-    background: 'white',
-    color: 'black',
-    padding: '10 20',
-    fontSize: '16',
-    borderRadius: '10',
-    fontWeight: '500',
-    boxShadow: '0 3px 10px rgba(0, 0, 0, .35)',
-    border: '0'
-  }
-}
+export * from './code'
 
-var number = { text: 0 }
+export const Code = {
+  props,
 
-var app = {
-  h2: number,
-  increment: {
-    proto: Button,
-    text: 'Increment',
-    on: {
-      click: event => {
-        number.update({ text: number.text + 1 })
-      }
-    }
-  }
-}
+  attr: { contentEditable: true },
 
-// connecting to Preview
-window.app = app`
+  on: {
+    render: ({ state, node }) => {
+      var flask = new CodeFlask(node, {
+        language: 'js',
+        defaultTheme: false,
+        styleParent: false
+      })
 
-export default {
-  style,
-
-  header: 'Code',
-
-  content: {
-    style: code,
-    attr: { contentEditable: true },
-    on: {
-      render: element => {
-        var flask = new CodeFlask(element.node, {
-          language: 'js',
-          defaultTheme: false
-        })
-
-        flask.updateCode(str)
-
-        flask.onUpdate((code) => {
-          eval(code) // eslint-disable-line no-eval
-          Preview.center.set(window.app)
-        })
-      }
+      flask.updateCode(state.code)
+      flask.onUpdate(code => state.update({ code }))
     }
   }
 }

@@ -1,12 +1,29 @@
 'use strict'
 
-import DOM from 'domql'
-import * as Symbols from 'smbls'
-import './define'
+import { Preview } from './Preview'
+import { CODE, Code } from './Code'
 
-import { Playground } from './app'
+import * as smbls from 'smbls'
+window.smbls = smbls
 
-window.DOM = DOM
-window.Symbols = Symbols
+export const Playground = {
+  state: {
+    code: CODE
+  },
 
-DOM.create(Playground)
+  props: {
+    maxWidth: 'K',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    alignContent: 'stretch',
+    fontFamily: 'Avenir Next',
+    overflow: 'hidden',
+    padding: '0 Z2 Z2',
+    color: 'white',
+    css: { zIndex: '1000' }
+  },
+
+  Preview,
+  Code
+}

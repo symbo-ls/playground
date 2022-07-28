@@ -1,26 +1,23 @@
 'use strict'
 
+import { Flex } from 'smbls'
+
 export const Preview = {
+  proto: Flex,
+
   props: {
-    padding: '16 22',
+    align: 'center center',
+    padding: 'A B2',
     flex: 1,
     position: 'relative'
   },
 
   center: {
-    props: {
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate3d(-50%, -50%, 1px)',
+    tag: 'shadow',
 
-      css: {
-        '& *': {
-          minWidth: 10,
-          minHeight: 10,
-          fontFamily: 'Avenir Next'
-        }
-      }
+    content: (element, state) => {
+
+      return window.eval(state.code) // eslint-disable-line no-eval
     }
   }
 }

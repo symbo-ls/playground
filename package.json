@@ -4,14 +4,18 @@
   "author": "symbo.ls",
   "version": "0.0.1",
   "repository": "https://github.com/symbo-ls/playground",
-  "main": "src/Playground.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url .",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url .",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
-    "codeflask": "^1.4.1"
+    "@rackai/domql": "^1.2.10",
+    "codeflask": "^1.4.1",
+    "domql": "^1.4.10",
+    "emotion": "^11.0.0",
+    "smbls": "^0.8.27"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
