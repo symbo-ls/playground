@@ -4,7 +4,7 @@ import DOM from 'domql'
 import { isObjectLike, exec } from 'domql/src/utils'
 import { classList } from 'domql/src/element/mixins'
 
-import { css } from 'emotion'
+import { css } from '@emotion/css'
 
 const style = (params, element, node) => {
   if (params) {

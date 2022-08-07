@@ -13,8 +13,7 @@
   "dependencies": {
     "codeflask": "^1.4.1",
     "domql": "^1.4.10",
-    "emotion": "^11.0.0",
-    "smbls": "^0.8.27"
+    "smbls": "^0.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
