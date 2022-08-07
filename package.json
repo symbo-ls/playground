@@ -2,7 +2,7 @@
   "name": "@symbo.ls/playground",
   "description": "Symbols playground",
   "author": "symbo.ls",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/symbo-ls/playground",
   "main": "src/index.js",
   "scripts": {
