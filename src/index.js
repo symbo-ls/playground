@@ -16,7 +16,7 @@ export const Playground = {
     height: '100%',
     display: 'flex',
     alignContent: 'stretch',
-    fontFamily: 'Avenir Next',
+    fontFamily: 'smbls',
     overflow: 'hidden',
     padding: '0 Z2 Z2',
     color: 'white',

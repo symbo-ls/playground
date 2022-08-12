@@ -1,6 +1,7 @@
 'use strict'
 
 import { Scene, Flex } from '@symbo.ls/components'
+import { demoComponent } from './Code'
 
 export const Preview = {
   proto: [Scene, Flex],
@@ -9,7 +10,6 @@ export const Preview = {
     align: 'center center',
     flex: 1,
     position: 'relative',
-    theme: { background: 'gray1 .55' },
 
     scene: {
       padding: 'A B2',
@@ -28,7 +28,10 @@ export const Preview = {
         }
       },
 
-      content: (el, state) => window.eval(state.code) // eslint-disable-line no-eval
+      content: (el, state) => ({
+        proto: demoComponent,
+        props: window.eval(state.code) // eslint-disable-line no-eval
+      })
     }
   }
 }

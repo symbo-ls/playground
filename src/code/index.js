@@ -2,14 +2,13 @@
 
 import CodeFlask from 'codeflask'
 
-import style from './style'
+import style, { dark, light } from './style'
 
 export * from './code'
 
 export const Code = {
   props: {
     position: 'relative',
-    background: 'gray1',
     padding: 'A1 B',
     widthRange: 'H H1',
     borderRadius: 'A',
@@ -20,7 +19,10 @@ export const Code = {
     flexDirection: 'column',
     fontFamily: 'Code',
 
-    style
+    style,
+
+    '@dark': dark,
+    '@light': light
   },
 
   attr: { contentEditable: true },
