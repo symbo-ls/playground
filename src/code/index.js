@@ -2,7 +2,7 @@
 
 import CodeFlask from 'codeflask'
 
-import css from './style'
+import style from './style'
 
 export * from './code'
 
@@ -20,7 +20,7 @@ export const Code = {
     flexDirection: 'column',
     fontFamily: 'Code',
 
-    css
+    style
   },
 
   attr: { contentEditable: true },

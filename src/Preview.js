@@ -13,7 +13,7 @@ export const Preview = {
 
     scene: {
       padding: 'A B2',
-      css: { backgroundPosition: '0 0' }
+      style: { backgroundPosition: '0 0' }
     }
   },
 

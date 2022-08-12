@@ -12,7 +12,6 @@ export const Playground = {
   },
 
   props: {
-    // maxWidth: 'K',
     width: '100%',
     height: '100%',
     display: 'flex',
@@ -22,7 +21,8 @@ export const Playground = {
     padding: '0 Z2 Z2',
     color: 'white',
     gap: 'Z2',
-    css: { zIndex: '1000' }
+
+    style: { zIndex: '100000' }
   },
 
   Preview,
