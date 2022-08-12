@@ -4,8 +4,8 @@ export const demoComponent = {
   component: 'Flex',
   state: { active: 0 },
 
-  title: { text: 'Incremental Number' },
-  h2: { text: (el, state) => state.active },
+  caption: { text: 'Incremental Number' },
+  title: { tag: 'h2', text: (el, state) => state.active },
 
   button: {
     proto: 'Button',
@@ -21,17 +21,25 @@ export const demoComponent = {
 export const CODE = `props = {
   flow: 'column',
   align: 'flex-start space-between',
-  background: 'gray3 .65',
-  color: 'white',
   padding: 'A2 B2 B2 B2',
   round: 'A2',
   boxSize: 'F1 G2',
 
-  title: {
+  '@dark': {
+    background: 'gray3 .65',
+    color: 'white'
+  },
+  '@light': {
+    background: 'white .8',
+    shadow: 'gray3, 0 A A',
+    color: 'gray3'
+  },
+
+  caption: {
     color: 'gray 1 +85'
   },
 
-  h2: {
+  title: {
     margin: '0 0 auto'
   },
 
