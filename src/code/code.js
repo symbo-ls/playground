@@ -28,12 +28,12 @@ export const CODE = `props = {
   '@dark': {
     background: 'gray3 .65',
     color: 'white',
-    boxShadow: 'gray12 .35, 0 A A'
+    boxShadow: 'black .05, 0 A A'
   },
   '@light': {
     background: 'white .8',
     color: 'gray3',
-    boxShadow: 'black .05, 0 A A'
+    boxShadow: 'gray12 .35, 0 A A'
   },
 
   caption: {
