@@ -22,6 +22,10 @@ export const Playground = {
     color: 'white',
     gap: 'Z2',
 
+    '@tabletL': {
+      flexDirection: 'column'
+    },
+
     style: { zIndex: '100000' }
   },
 

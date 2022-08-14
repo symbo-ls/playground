@@ -2,7 +2,7 @@
 
 import CodeFlask from 'codeflask'
 
-import style, { dark, light } from './style'
+import { style, dark, light } from './style'
 
 export * from './code'
 

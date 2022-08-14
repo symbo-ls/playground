@@ -1,6 +1,6 @@
 'use strict'
 
-export default {
+export const style = {
   '&': `
     .codeflask.codeflask {}
 
@@ -25,7 +25,7 @@ export const dark = {
   background: 'gray6 0.15',
 
   style: {
-    caretColor: 'white',
+    textarea: { caretColor: 'white' },
     '& .token': {
       '&.keyword': { color: '#4f82ae' },
       '&.string': { color: '#c8749c' },
@@ -47,7 +47,7 @@ export const light = {
   color: 'gray3',
 
   style: {
-    caretColor: 'black',
+    textarea: { caretColor: 'black' },
     '& .token': {
       '&.keyword': { color: '#1373c6' },
       '&.string': { color: '#e34c94' },
