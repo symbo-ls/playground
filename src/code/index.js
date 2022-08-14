@@ -19,6 +19,10 @@ export const Code = {
     flexDirection: 'column',
     fontFamily: 'Code',
 
+    '@tabletL': {
+      widthRange: '100% 100%'
+    },
+
     style,
 
     '@dark': dark,

@@ -15,6 +15,7 @@ export const Playground = {
     width: '100%',
     height: '100%',
     display: 'flex',
+    flexDirection: 'row',
     alignContent: 'stretch',
     fontFamily: 'smbls',
     overflow: 'hidden',
