@@ -1,24 +1,33 @@
 'use strict'
 
+import { Flex } from '@symbo.ls/components'
+
 export const demoComponent = {
-  component: 'Flex',
+  extend: Flex,
   state: { active: 0 },
 
-  caption: { text: 'Incremental Number' },
-  title: { tag: 'h2', text: (el, state) => state.active },
+  caption: { },
+  title: ({ props }) => {
+    const { title } = props
+    console.log(title, props)
+    return {
+      tag: title.tag,
+      props: title
+    }
+  },
 
   button: {
-    proto: 'Button',
-    text: 'Increment',
+    extend: 'Button',
     on: {
       click: (ev, element, state) => {
-        state.update({ active: state.active + 1 })
+        state.update = state.update.bind(state)
+        element.props.onClick(ev, state)
       }
     }
   }
 }
 
-export const CODE = `props = {
+export const CODE = `({ state }) => ({
   flow: 'column',
   align: 'flex-start space-between',
   padding: 'A2 B2 B2 B2',
@@ -37,19 +46,28 @@ export const CODE = `props = {
   },
 
   caption: {
+    text: 'Incremental Number',
     color: 'gray 1 +85'
   },
 
   title: {
+    tag: 'h2',
+    text: state.active,
     margin: '0 0 auto'
   },
 
   button: {
+    text: 'Increment',
     fontSize: 'A',
     theme: 'primary',
     shape: 'tooltip',
     padding: 'Z2 B2',
     round: 'B2',
-    margin: '-X2'
+    margin: '-X2',
+
+    onClick: (event, state) => {
+      console.log(state)
+      state.update({ active: state.active + 1 })
+    }
   }
-}`
+})`

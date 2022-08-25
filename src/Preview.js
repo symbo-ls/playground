@@ -4,7 +4,7 @@ import { Scene, Flex } from '@symbo.ls/components'
 import { demoComponent } from './Code'
 
 export const Preview = {
-  proto: [Scene, Flex],
+  extend: [Scene, Flex],
 
   props: {
     align: 'center center',
@@ -28,10 +28,12 @@ export const Preview = {
         }
       },
 
-      content: (el, state) => ({
-        proto: demoComponent,
-        props: window.eval(state.code) // eslint-disable-line no-eval
-      })
+      content: (el, state) => {
+        return {
+          extend: demoComponent,
+          props: window.eval(state.code) // eslint-disable-line no-eval
+        }
+      }
     }
   }
 }
