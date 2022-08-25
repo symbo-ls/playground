@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "codeflask": "^1.4.1",
-    "domql": "^1.4.10",
-    "smbls": "^0.9.1"
+    "domql": "^1.5.0",
+    "smbls": "^0.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
