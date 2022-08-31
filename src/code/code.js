@@ -8,7 +8,6 @@ export const demoComponent = {
   caption: { },
   title: ({ props }) => {
     const { title } = props
-    console.log(title, props)
     return {
       tag: title.tag,
       props: title
