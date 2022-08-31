@@ -8,6 +8,7 @@ window.smbls = smbls
 
 export const Playground = {
   state: {
+    active: 0,
     code: CODE
   },
 

@@ -4,7 +4,6 @@ import { Flex } from '@symbo.ls/components'
 
 export const demoComponent = {
   extend: Flex,
-  state: { active: 0 },
 
   caption: { },
   title: ({ props }) => {
@@ -65,8 +64,7 @@ export const CODE = `({ state }) => ({
     round: 'B2',
     margin: '-X2',
 
-    onClick: (event, state) => {
-      console.log(state)
+    onClick: event => {
       state.update({ active: state.active + 1 })
     }
   }
