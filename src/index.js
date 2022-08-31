@@ -19,7 +19,7 @@ export const Playground = {
     alignContent: 'stretch',
     fontFamily: 'smbls',
     overflow: 'hidden',
-    padding: '0 Z2 Z2',
+    padding: '0 Z2',
     color: 'white',
     gap: 'Z2',
 
