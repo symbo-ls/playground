@@ -6,6 +6,7 @@
   "repository": "https://github.com/symbo-ls/playground",
   "main": "src/index.js",
   "scripts": {
+    "link:all": "yarn link smbls domql css-in-props @symbo.ls/icons @symbo.ls/config @symbo.ls/components @symbo.ls/scratch @symbo.ls/playground @symbo.ls/utils @symbo.ls/init @symbo.ls/config-default @domql/router @domql/utils @domql/router",
     "start": "parcel index.html",
     "build": "parcel build index.html --public-url .",
     "deploy": "yarn build && gh-pages -d dist"
