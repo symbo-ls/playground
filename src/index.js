@@ -1,7 +1,7 @@
 'use strict'
 
 import { Preview } from './Preview'
-import { CODE, Code } from './Code'
+import { CODE, Code } from './code='
 
 import * as smbls from 'smbls'
 window.smbls = smbls

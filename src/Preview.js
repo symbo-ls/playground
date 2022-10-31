@@ -1,7 +1,7 @@
 'use strict'
 
 import { Scene, Flex } from '@symbo.ls/components'
-import { demoComponent } from './Code'
+import { demoComponent } from './code='
 
 export const Preview = {
   extend: [Scene, Flex],
