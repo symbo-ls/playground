@@ -6,17 +6,15 @@
   "repository": "https://github.com/symbo-ls/playground",
   "main": "src/index.js",
   "scripts": {
-    "link:all": "yarn link smbls domql css-in-props @symbo.ls/icons @symbo.ls/config @symbo.ls/components @symbo.ls/scratch @symbo.ls/playground @symbo.ls/utils @symbo.ls/init @symbo.ls/config-default @domql/router @domql/utils @domql/router",
     "start": "parcel index.html",
     "build": "parcel build index.html --public-url .",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
-    "codeflask": "^1.4.1",
-    "domql": "^1.5.0",
-    "smbls": "^0.10.0"
+    "codeflask": "^1.4.1"
   },
   "devDependencies": {
+    "domql": "^1.5.0",
     "@babel/core": "^7.11.5",
     "@emotion/css": "^11.5.0",
     "babel-eslint": "^10.0.3",
