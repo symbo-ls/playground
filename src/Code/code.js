@@ -58,7 +58,6 @@ export const CODE = `({ state }) => ({
     text: 'Increment',
     fontSize: 'A',
     theme: 'primary',
-    shape: 'tooltip',
     padding: 'Z2 B2',
     round: 'B2',
     margin: '-X2',
